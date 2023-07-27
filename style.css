@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Telivigala&family=Poppins:wght@500;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #0093E9;
+    background-image: linear-gradient(50deg, #0093E9 27%, #80D0C7 100%);
+}
+.card{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    height: 180px;
+    width: 380px;
+    background-color: white;
+    box-shadow: 0 10px 20px rgba(128, 208, 199, 0.5);
+    border-radius: 10px;
+    transition: 0.5s;
+}
+.card .card-img{
+    position: absolute;
+    height: 150px;
+    width: 150px;
+    background-color: black;
+    border-radius: 20px;
+    top: -60px;
+    box-shadow: 0 10px 20px rgba(128, 208, 199, 0.5);
+    overflow: hidden;
+    transition: 0.5s;
+}
+.card .card-img img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.card:hover {
+    height: 430px;
+}
+.card:hover .card-img {
+    height: 250px;
+    width: 250px;
+}
+.card .card-content{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+.card .card-content .details{
+    position: absolute;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+    transform: translateY(175px);
+    transition: 0.5s;
+    
+}
+.card:hover .card-content .details{
+    transform: translateY(20px);  
+}
+.card .card-content .details h2{
+    text-align: center;
+    font-size: 1.8rem;
+    padding: 10px;
+    color: #0c3b56;
+}
+.card .card-content .details span{
+    display: block;
+    color: #0c3b56;
+    opacity: 0.4;
+    font-size: 1rem;
+    margin-top: -10px;
+    margin-bottom: 10PX;
+    padding: 10px;
+}
+.card .card-content .details .medsos{
+    display: flex;
+    justify-content: space-around;
+    
+}
+.card .card-content .details .medsos .icon i{
+  font-size: 1.9rem;
+  color: #0c3b56;
+}
+.card .card-content .details .medsos .icon span {
+    display: block;
+    color: blue;
+    font-size: 0.8rem;
+}
+.card .card-content .details .btn-follow{
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 40px;
+}
+.card .card-content .details .btn-follow button{
+    display: block;
+    width: 100px;
+    height: 30px;
+    border: none;
+    color: white;
+    background-color: #0c3b56;
+    font-family: 'poppins', sans-serif;
+    cursor: pointer;
+}
+.card .card-content .details .btn-follow button:nth-child(2){
+    border: 1px solid #0c3b56;
+    background-color: white;
+    color: #0c3b56;
+}
+
+
+
+
+
+
+
+
+
